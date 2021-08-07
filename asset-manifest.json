@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/HOLO-png/E-commerce-project.git/static/css/main.a617e044.chunk.css",
+    "main.js": "/HOLO-png/E-commerce-project.git/static/js/main.3a13d6b6.chunk.js",
+    "main.js.map": "/HOLO-png/E-commerce-project.git/static/js/main.3a13d6b6.chunk.js.map",
+    "runtime-main.js": "/HOLO-png/E-commerce-project.git/static/js/runtime-main.b9000f52.js",
+    "runtime-main.js.map": "/HOLO-png/E-commerce-project.git/static/js/runtime-main.b9000f52.js.map",
+    "static/js/2.967a1662.chunk.js": "/HOLO-png/E-commerce-project.git/static/js/2.967a1662.chunk.js",
+    "static/js/2.967a1662.chunk.js.map": "/HOLO-png/E-commerce-project.git/static/js/2.967a1662.chunk.js.map",
+    "static/js/3.d65052cd.chunk.js": "/HOLO-png/E-commerce-project.git/static/js/3.d65052cd.chunk.js",
+    "static/js/3.d65052cd.chunk.js.map": "/HOLO-png/E-commerce-project.git/static/js/3.d65052cd.chunk.js.map",
+    "index.html": "/HOLO-png/E-commerce-project.git/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/HOLO-png/E-commerce-project.git/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.967a1662.chunk.js.LICENSE.txt": "/HOLO-png/E-commerce-project.git/static/js/2.967a1662.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/HOLO-png/E-commerce-project.git/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b9000f52.js",
+    "static/js/2.967a1662.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.3a13d6b6.chunk.js"
+  ]
+}
