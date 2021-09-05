@@ -1,10 +1,14 @@
 import './App.css';
 import { BrowserRouter, Redirect, Switch } from 'react-router-dom';
 import { Suspense } from 'react';
+import './Sass/_variables.scss';
+import './Sass/_base.scss';
 
 import MainLayout from './Common/MainLayout';
 import LoginLayout from './Common/LoginLayout';
 import { LOGIN_ROUTES, MAIN_ROUTES } from './Constants/Route';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
 
 function App() {
     const renderAdminRoute = () => {
@@ -42,13 +46,13 @@ function App() {
 
     const renderMain = () => (
         <>
+            <Header />
             <div className="container">
-                {/* <Header /> */}
                 <div className="main">
                     <Switch>{renderAdminRoute()}</Switch>
                 </div>
             </div>
-            {/* <Footer /> */}
+            <Footer />
         </>
     );
 
