@@ -3,6 +3,7 @@ import { BrowserRouter, Redirect, Switch } from 'react-router-dom';
 import { Suspense } from 'react';
 import './Sass/_variables.scss';
 import './Sass/_base.scss';
+import './Sass/_mixins.scss';
 
 import MainLayout from './Common/MainLayout';
 import LoginLayout from './Common/LoginLayout';
