@@ -2,9 +2,10 @@ import React from 'react';
 import Cart from '../Pages/Cart';
 import News from '../Pages/News';
 import NotFound from '../Pages/NotFound';
-import Products from '../Pages/Products';
 import Dashboard from '../Pages/Dashboard';
 import LoginPage from '../Pages/LoginPage';
+import Category from '../Pages/Category';
+import Products from '../Pages/Product';
 
 const Home = React.lazy(() => import('../Pages/Home'));
 
@@ -38,6 +39,12 @@ export const MAIN_ROUTES = [
         path: '/dashboard',
         exact: false,
         component: Dashboard,
+    },
+    {
+        name: 'Category',
+        path: '/Category',
+        exact: false,
+        component: Category,
     },
     {
         name: 'NotFound',

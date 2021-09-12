@@ -1,9 +1,11 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import * as Yup from 'yup';
 import { FastField, Form, Formik, isEmptyChildren } from 'formik';
 import { Button, FormGroup, Input, Label, Spinner } from 'reactstrap';
 import InputField from '../../InputField';
+// import { handleFbLogin, handleGgLogin } from '../../../Firebase/LoginConfig';
 
 Signup.propTypes = {
     onSubmit: PropTypes.func,
@@ -13,6 +15,8 @@ Signup.defaultProps = {
 };
 
 function Signup(props) {
+    const { handleFbLogin } = props;
+
     const initialValues = {
         name: '',
         email: '',
@@ -53,17 +57,16 @@ function Signup(props) {
                             </h1>
                             <div className="form__social-container">
                                 <a
-                                    href
                                     className="form__social"
-                                    // onClick={handleFbLogin}
+                                    onClick={handleFbLogin}
                                 >
                                     <i className="fab fa-facebook-f" />
                                 </a>
-                                <a href className="form__social">
-                                    <i
-                                        className="fab fa-google-plus-g"
-                                        // onClick={handleGgLogin}
-                                    />
+                                <a
+                                    className="form__social"
+                                    // onClick={handleGgLogin}
+                                >
+                                    <i className="fab fa-google-plus-g" />
                                 </a>
                             </div>
                             <span>or use your email for registration</span>

@@ -7,17 +7,21 @@ import HeaderOrther from './HeaderOrther';
 import HeaderAccount from './HeaderAccount';
 import HeaderCart from './HeaderCart';
 import './style.scss';
+import MenuCategory from './MenuCategory';
 
 function Header(props) {
     return (
-        <header className="header">
-            <HeaderLogo />
-            <HeaderCateforyProduct />
-            <HeaderSearch />
-            <HeaderAccount />
-            <HeaderCart />
-            <HeaderOrther />
-        </header>
+        <div className="header-product">
+            <header className="header">
+                <HeaderLogo />
+                <HeaderCateforyProduct />
+                <HeaderSearch />
+                <HeaderAccount />
+                <HeaderCart />
+                <HeaderOrther />
+            </header>
+            <MenuCategory />
+        </div>
     );
 }
 

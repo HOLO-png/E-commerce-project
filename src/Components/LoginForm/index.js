@@ -1,14 +1,23 @@
 import React, { useState } from 'react';
+import firebase, { auth } from '../../Firebase/config';
 import Signin from './Signin';
 import Signup from './Signup';
 import './style.scss';
 
+const fbProvider = new firebase.auth.FacebookAuthProvider();
 function LoginForm(props) {
     const [isActive, setIsActive] = useState(false);
     const isShowSignup = () => {
         setIsActive(!isActive);
     };
 
+    const handleFbLogin = () => {
+        auth.signInWithPopup(fbProvider);
+    };
+
+    auth.onAuthStateChanged((user) => {
+        console.log({ user });
+    });
     return (
         <div className="form">
             <div
@@ -16,7 +25,7 @@ function LoginForm(props) {
                     isActive ? 'container right-panel-active' : 'container'
                 }
             >
-                <Signup />
+                <Signup handleFbLogin={handleFbLogin} />
                 <Signin />
 
                 <div className="form__overlay-container">

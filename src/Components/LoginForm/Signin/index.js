@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import * as Yup from 'yup';
 import { FastField, Form, Formik, isEmptyChildren } from 'formik';
@@ -5,6 +6,7 @@ import { Button, FormGroup, Input, Label, Spinner } from 'reactstrap';
 import PropTypes from 'prop-types';
 import InputField from '../../InputField';
 import { Link } from 'react-router-dom';
+import { handleFbLogin, handleGgLogin } from '../../../Firebase/LoginConfig';
 
 Signin.propTypes = {
     onSubmit: PropTypes.func,
@@ -43,16 +45,14 @@ function Signin(props) {
                             <h1 className="form__title">Sign in</h1>
                             <div className="form__social-container">
                                 <a
-                                    href
                                     className="form__social"
-                                    // onClick={handleFbLogin}
+                                    onClick={handleFbLogin}
                                 >
                                     <i className="fab fa-facebook-f" />
                                 </a>
                                 <a
-                                    href
                                     className="form__social"
-                                    // onClick={handleGgLogin}
+                                    onClick={handleGgLogin}
                                 >
                                     <i className="fab fa-google-plus-g" />
                                 </a>

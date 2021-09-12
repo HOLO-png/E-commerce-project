@@ -10,6 +10,7 @@ import LoginLayout from './Common/LoginLayout';
 import { LOGIN_ROUTES, MAIN_ROUTES } from './Constants/Route';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
+import AuthProvider from './Contexts/AuthProvider';
 
 function App() {
     const renderAdminRoute = () => {
@@ -60,11 +61,13 @@ function App() {
     return (
         <Suspense fallback={<div>loading...</div>}>
             <BrowserRouter>
-                <Switch>
-                    <Redirect exact from="/" to="home" />
-                    {renderLoginRoute()}
-                    {renderMain()}
-                </Switch>
+                <AuthProvider>
+                    <Switch>
+                        <Redirect exact from="/" to="home" />
+                        {renderLoginRoute()}
+                        {renderMain()}
+                    </Switch>
+                </AuthProvider>
             </BrowserRouter>
         </Suspense>
     );

@@ -10,16 +10,18 @@
     width: 100%;
     height: 104px;
     z-index: 100;
-    padding: 20px 140px;
+    padding: 20px 135px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: translateX(-5px);
 
     &__logo {
         width: 100px;
         height: 100%;
         margin-right: 15px;
     }
+    
     &__logo--01 {
         width: 60%;
         margin-bottom: 7px;
@@ -44,6 +46,7 @@
         margin-left: 13px;
         margin-right: 5px;
     }
+
     &__category-title {
         font-size: 11px;
         margin: 0;
