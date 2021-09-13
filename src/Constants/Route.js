@@ -6,6 +6,7 @@ import Dashboard from '../Pages/Dashboard';
 import LoginPage from '../Pages/LoginPage';
 import Category from '../Pages/Category';
 import Products from '../Pages/Product';
+import NewDescription from '../Pages/NewDescription';
 
 const Home = React.lazy(() => import('../Pages/Home'));
 
@@ -45,6 +46,12 @@ export const MAIN_ROUTES = [
         path: '/Category',
         exact: false,
         component: Category,
+    },
+    {
+        name: 'New description',
+        path: '/New/:name/:id',
+        exact: false,
+        component: NewDescription,
     },
     {
         name: 'NotFound',
