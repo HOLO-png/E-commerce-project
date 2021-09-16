@@ -1,99 +1,36 @@
 import React, { useEffect, useState } from 'react';
-import { Tabs } from 'antd';
 import './style.scss';
-import {
-    AppstoreOutlined,
-    BarsOutlined,
-    ContainerOutlined,
-    MessageOutlined,
-    UsergroupAddOutlined,
-} from '@ant-design/icons';
-import DashboardMain from './DashboardMain/DashboardMain';
+import Helmet from '../../Components/Helmet';
+import DashboardHeader from '../../Components/DashBoard/DashboardHeader';
+import DashboardSideBar from '../../Components/DashBoard/DashboardSideBar';
+import { DASHBOARD_ROUTES } from '../../Constants/Route';
+import { BrowserRouter, Link, Switch } from 'react-router-dom';
+import DashboardItemLayout from '../../Common/DashboardItemLayout';
 
-const { TabPane } = Tabs;
-
-const Dashboard = () => {
-    const [isMobile, setIsMobile] = useState(false);
-
-    useEffect(() => {
-        setIsMobile(window.innerWidth < 687);
-    }, []);
-
-    const fontSizeIcon = { fontSize: '20px', paddingLeft: '10px' };
-    const bgColor = {
-        background: 'rgb(231, 231, 231)',
-        minHeight: '100vh',
-        padding: '20px',
-    };
+const renderDashboardRender = () => {
+    let xhtml = null;
+    xhtml = DASHBOARD_ROUTES.map((route, index) => {
+        return (
+            <DashboardItemLayout
+                name={route.name}
+                key={index}
+                component={route.component}
+                exact={route.exact}
+                path={route.path}
+            />
+        );
+    });
+    return xhtml;
+};
+const Dashboard = (props) => {
     return (
-        <>
-            <Tabs
-                tabPosition={isMobile ? 'top' : 'left'}
-                size="large"
-                centered={false}
-            >
-                <TabPane
-                    style={bgColor}
-                    tab={
-                        <span>
-                            <AppstoreOutlined style={fontSizeIcon} />
-                            Dashboard
-                        </span>
-                    }
-                    key="1"
-                >
-                    <DashboardMain />
-                </TabPane>
-                <TabPane
-                    style={bgColor}
-                    tab={
-                        <span>
-                            <UsergroupAddOutlined style={fontSizeIcon} />
-                            Customer
-                        </span>
-                    }
-                    key="2"
-                >
-                    Customer
-                </TabPane>
-                <TabPane
-                    style={bgColor}
-                    tab={
-                        <span>
-                            <ContainerOutlined style={fontSizeIcon} />
-                            Products
-                        </span>
-                    }
-                    key="3"
-                >
-                    Products
-                </TabPane>
-                <TabPane
-                    style={bgColor}
-                    tab={
-                        <span>
-                            <BarsOutlined style={fontSizeIcon} />
-                            Order
-                        </span>
-                    }
-                    key="4"
-                >
-                    Order
-                </TabPane>
-                <TabPane
-                    style={bgColor}
-                    tab={
-                        <span>
-                            <MessageOutlined style={fontSizeIcon} />
-                            Chat
-                        </span>
-                    }
-                    key="5"
-                >
-                    Chat
-                </TabPane>
-            </Tabs>
-        </>
+        <Helmet title="dashboard">
+            <div className="dashboard">
+                <DashboardHeader />
+                <DashboardSideBar />
+                <Switch>{renderDashboardRender()}</Switch>
+            </div>
+        </Helmet>
     );
 };
 export default Dashboard;

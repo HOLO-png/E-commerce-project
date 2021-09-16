@@ -7,12 +7,29 @@ import './Sass/_mixins.scss';
 
 import MainLayout from './Common/MainLayout';
 import LoginLayout from './Common/LoginLayout';
-import { LOGIN_ROUTES, MAIN_ROUTES } from './Constants/Route';
+import { DASHBOARD_MAIN, LOGIN_ROUTES, MAIN_ROUTES } from './Constants/Route';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import AuthProvider from './Contexts/AuthProvider';
+import DashboardLayout from './Common/DashboardLayout';
 
 function App() {
+    const renderDashboardRoute = () => {
+        let xhtml = null;
+        xhtml = DASHBOARD_MAIN.map((route, index) => {
+            return (
+                <DashboardLayout
+                    name={route.name}
+                    key={index}
+                    component={route.component}
+                    exact={route.exact}
+                    path={route.path}
+                />
+            );
+        });
+        return xhtml;
+    };
+
     const renderAdminRoute = () => {
         let xhtml = null;
         xhtml = MAIN_ROUTES.map((route, index) => {
@@ -64,6 +81,7 @@ function App() {
                 <AuthProvider>
                     <Switch>
                         <Redirect exact from="/" to="home" />
+                        {renderDashboardRoute()}
                         {renderLoginRoute()}
                         {renderMain()}
                     </Switch>

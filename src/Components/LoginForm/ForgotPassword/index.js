@@ -1,3 +1,4 @@
+/* eslint-disable no-template-curly-in-string */
 import React from 'react';
 import * as Yup from 'yup';
 import { FastField, Form, Formik, isEmptyChildren } from 'formik';
@@ -6,8 +7,8 @@ import PropTypes from 'prop-types';
 import InputField from '../../InputField';
 import { Link, useHistory } from 'react-router-dom';
 import { auth } from '../../../Firebase/config';
-import { toast } from 'react-toastify';
-
+import { notification } from 'antd';
+import { SmileOutlined } from '@ant-design/icons';
 ForgotPassword.propTypes = {
     onSubmit: PropTypes.func,
 };
@@ -32,9 +33,11 @@ function ForgotPassword(props) {
             await auth
                 .sendPasswordResetEmail(val.email)
                 .then(() => {
-                    toast.success(
-                        `Yêu cầu đã được gửi đến ${val.email}, Vui lòng xác nhận lại mật khẩu của bạn 😍`,
-                    );
+                    notification.open({
+                        message: 'Kiểm Tra Tài Khoản',
+                        description: `Yêu cầu đã được gửi đến ${val.email}, Vui lòng xác nhận lại mật khẩu của bạn 😍`,
+                        icon: <SmileOutlined style={{ color: '#108ee9' }} />,
+                    });
                     window.localStorage.setItem(
                         'emailForRegistration',
                         JSON.stringify(val.email),
@@ -42,9 +45,12 @@ function ForgotPassword(props) {
                     history.push('/login');
                 })
                 .catch((error) => {
-                    toast.error(
-                        `Lỗi không mong muốn, vui lòng load lại trang 🙄`,
-                    );
+                    notification.open({
+                        message: 'Kiểm Tra Tài Khoản',
+                        description:
+                            'Lỗi không mong muốn, vui lòng load lại trang 🙄',
+                        icon: <SmileOutlined style={{ color: '#108ee9' }} />,
+                    });
                 });
         }, 1000);
     };

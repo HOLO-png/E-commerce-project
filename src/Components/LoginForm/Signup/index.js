@@ -15,7 +15,7 @@ Signup.defaultProps = {
 };
 
 function Signup(props) {
-    const { handleFbLogin } = props;
+    const { handleFbLogin, handleGgLogin } = props;
 
     const initialValues = {
         name: '',
@@ -64,7 +64,7 @@ function Signup(props) {
                                 </a>
                                 <a
                                     className="form__social"
-                                    // onClick={handleGgLogin}
+                                    onClick={handleGgLogin}
                                 >
                                     <i className="fab fa-google-plus-g" />
                                 </a>

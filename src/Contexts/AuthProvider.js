@@ -1,4 +1,4 @@
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory, Redirect } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 import { auth } from '../Firebase/config';
 import { Spinner } from 'reactstrap';
@@ -22,7 +22,7 @@ export default function AuthProvider({ children }) {
                     photoURL,
                 });
                 setIsLoading(false);
-                // history.push('/home');
+                // history.replace('/home');
                 return;
             }
             setIsLoading(false);
