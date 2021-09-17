@@ -1,3 +1,6 @@
+@import "../../Sass/mixins";
+@import "../../Sass/variables";
+
 .home {
     width: 100%;
     height: auto;
@@ -20,6 +23,232 @@
         right: 0px;
         img {
             width: 100%;
+        }
+    }
+    .police-cart {
+        @include flex(center, flex-start);
+        padding: 20px;
+        padding-left: 0;
+        box-shadow: $box-shadow;
+        transition: transform 0.5s ease;
+        cursor: pointer;
+        color: $main-color;
+        height: 90px;
+        background: #fff;
+        &:hover {
+            transform: translateY(-20px);
+        }
+
+        &__icon {
+            @include flex(center, center);
+            width: 40%;
+            color: $main-color;
+
+            i {
+                font-size: 3rem;
+            }
+        }
+
+        &__info {
+            &__name {
+                font-size: 1.25rem;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+            &__description {
+                font-size: 1rem;
+                color: $txt-second-color;
+            }
+        }
+    }
+    .section {
+        margin: 80px 0px;
+
+        & > * ~ * {
+            margin-top: 70px;
+        }
+
+        &__title {
+            font-size: 30px;
+            color: #f49910;
+            text-transform: capitalize;
+            text-align: center;
+            font-family: "M PLUS Rounded 1c", sans-serif;
+
+            & i {
+                margin-right: 10px;
+                font-size: 40px;
+                color: #fddb45;
+            }
+        }
+    }
+    .price-shock {
+        margin-bottom: 30px;
+        padding: 20px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        button.slick-arrow.slick-prev {
+            background: #3333331f;
+            position: absolute;
+            left: 0%;
+            width: 3%;
+            height: 100px;
+            z-index: 1;
+        }
+        button.slick-arrow.slick-next {
+            background: #3333331f;
+            position: absolute;
+            right: 0%;
+            width: 3%;
+            height: 100px;
+            z-index: 1;
+        }
+        .price-shock-title {
+            font-size: 30px;
+            color: #ff5500;
+        }
+        i.fad.fa-bolt {
+            font-size: 45px;
+            color: #ffca00;
+        }
+        .ant-card-cover {
+            width: 100%;
+            height: 200px;
+            transform: translateY(30px);
+            transition: 0.5s ease;
+            &:hover {
+                transform: translateY(20px);
+            }
+        }
+        .ant-card-body {
+            height: 105px;
+        }
+        .ant-card-meta-title {
+            color: #e80000;
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+        }
+        .ant-card-meta-description {
+            text-align: center;
+        }
+        ul.slick-dots {
+            visibility: hidden;
+        }
+        .slick-slide img {
+            display: block;
+            width: 85%;
+            margin-left: 17px;
+        }
+        .ant-card.ant-card-bordered.ant-card-hoverable {
+            margin: 2px;
+        }
+        i.fas.fa-fire {
+            position: absolute;
+            top: 85%;
+            right: 6%;
+            font-size: 37px;
+        }
+    }
+    .genuine-brand {
+        font-family: "M PLUS Rounded 1c", sans-serif;
+        margin-bottom: 30px;
+        padding: 20px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+        button.slick-arrow.slick-prev {
+            background: #3333331f;
+            position: absolute;
+            left: 0%;
+            width: 3%;
+            height: 100px;
+            z-index: 1;
+        }
+        button.slick-arrow.slick-next {
+            background: #3333331f;
+            position: absolute;
+            right: 0%;
+            width: 3%;
+            height: 100px;
+            z-index: 1;
+        }
+        .genuine-brand-title {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        p {
+            margin: 10px 10px;
+            color: #a2a2a2;
+            font-size: 23px;
+        }
+        i.fad.fa-donate {
+            font-size: 23px;
+            color: #326ebc;
+        }
+        .ant-col.ant-col-4.gutter-row {
+            position: relative;
+        }
+        .genuine-brand-btn {
+            position: absolute;
+            bottom: 10px;
+            left: 30%;
+        }
+        .ant-image {
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+    }
+    .category-select {
+        margin-bottom: 10px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        .category-select-title {
+            height: 50px;
+            display: flex;
+            align-items: center;
+            margin: 0 20px;
+            font-size: 22px;
+            color: #197468;
+            i.fad.fa-lightbulb-on {
+                margin-right: 15px;
+                font-size: 30px;
+                color: #e69707;
+            }
+        }
+        .ant-col.ant-col-3.gutter-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 0;
+        }
+        .category-select-img {
+            width: 30%;
+            height: 55%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            width: 100%;
+        }
+        .category-select-card {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            cursor: pointer;
+            &:nth-child(8) {
+                border-right: none;
+            }
         }
     }
 }

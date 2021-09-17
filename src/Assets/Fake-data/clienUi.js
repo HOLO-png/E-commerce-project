@@ -184,3 +184,148 @@ export const render_news_item = [
         date: '3 giờ trước',
     },
 ];
+export const slide_genuine = [
+    'https://salt.tikicdn.com/cache/w1080/ts/banner/f9/c2/92/1aab9d593a04faf0d403e17203ad59b8.jpg.webp',
+    'https://salt.tikicdn.com/cache/w1080/ts/banner/2f/70/63/37ad074899b91efd9f225786968ccda7.jpg.webp',
+    'https://salt.tikicdn.com/cache/w1080/ts/banner/0f/1f/df/0fbf4177fee0e7faf7346c89bfb8106f.jpg.webp',
+    'https://salt.tikicdn.com/cache/w1080/ts/banner/9b/8b/a0/ff13d673e466f0a53ec335c392feda2e.png.webp',
+    'https://salt.tikicdn.com/cache/w1080/ts/banner/45/33/5c/7fcc628cd0a1add0edb0069627ceefc3.jpg.webp',
+];
+export const slide_price_shock = [
+    'https://cdn.tgdd.vn/2021/08/banner/800-200-800x200-98.png',
+    'https://cdn.tgdd.vn/2021/08/banner/800-200-800x200-100.png',
+    'https://cdn.tgdd.vn/2021/08/banner/800-200-800x200-102.png',
+    'https://cdn.tgdd.vn/2021/08/banner/lapevo-800-200-800x200-1.png',
+    'https://cdn.tgdd.vn/2021/08/banner/800-200-800x200-108.png',
+    'https://cdn.tgdd.vn/2021/08/banner/800-200-800x200-95.png',
+    'https://cdn.tgdd.vn/2021/08/banner/800-200-800x200-101.png',
+];
+export const products_price_shock = [
+    {
+        price: 23000000,
+        image: 'https://cdn.tgdd.vn/Products/Images/42/226935/samsung-galaxy-z-fold-3-silver-1-600x600.jpg',
+        util: 30,
+    },
+    {
+        price: 16000000,
+        image: 'https://cdn.tgdd.vn/Products/Images/42/213031/iphone-12-xanh-duong-600x600.jpg',
+        util: 70,
+    },
+    {
+        price: 13000000,
+        image: 'https://cdn.tgdd.vn/Products/Images/42/233241/xiaomi-mi-11-lite-4g-blue-600x600.jpg',
+        util: 20,
+    },
+    {
+        price: 4000000,
+        image: 'https://cdn.tgdd.vn/Products/Images/42/233241/xiaomi-mi-11-lite-4g-blue-600x600.jpg',
+        util: 80,
+    },
+    {
+        price: 10000000,
+        image: 'https://cdn.tgdd.vn/Products/Images/42/239747/oppo-reno6-z-5g-aurora-1-600x600.jpg',
+        util: 90,
+    },
+    {
+        price: 33000000,
+        image: 'https://cdn.tgdd.vn/Products/Images/42/235971/xiaomi-redmi-note-10-5g-xanh-bong-dem-1-600x600.jpg',
+        util: 30,
+    },
+    {
+        price: 10000000,
+        image: 'https://cdn.tgdd.vn/Products/Images/42/249049/samsung-galaxy-a22-den-2-600x600.jpg',
+        util: 15,
+    },
+    {
+        price: 21000000,
+        image: 'https://cdn.tgdd.vn/Products/Images/42/240286/vivo-y53s-xanh-600x600.jpg',
+        util: 10,
+    },
+    {
+        price: 44000000,
+        image: 'https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold-3-black-1-1-600x600.jpg',
+        util: 37,
+    },
+    {
+        price: 10000000,
+        image: 'https://cdn.tgdd.vn/Products/Images/42/213032/iphone-12-pro-bac-new-600x600-600x600.jpg',
+        util: 59,
+    },
+    {
+        price: 50000000,
+        image: 'https://cdn.tgdd.vn/Products/Images/42/213032/iphone-12-pro-bac-new-600x600-600x600.jpg',
+        util: 10,
+    },
+    {
+        price: 2000000,
+        image: 'https://cdn.tgdd.vn/Products/Images/42/213032/iphone-12-pro-bac-new-600x600-600x600.jpg',
+        util: 0,
+    },
+];
+
+export const slide_laptop_genuine = [
+    'https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/2/18/637492369087666209_asus-zenbook-ux425-xam-dd-bh-2nam.jpg',
+    'https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/7/20/637624023473077758_acer-nitro-gaming-an515-57-den-rtx3050-dd-1.jpg',
+    'https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/7/7/637612635561893293_msi-bravo-15-den-dd.jpg',
+    'https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/2/25/637498497194722384_FA506LH-LI-dd.jpg',
+    'https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/7/5/637610886675406247_acer-nitro-gaming-an515-57-den-dd.jpg',
+    'https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/10/30/637396732533488898_asus-vivobook-a515-bac-dd.png',
+];
+
+export const police = [
+    {
+        name: 'Free ship',
+        description: 'Miễn Phí Vận Chuyển',
+        icon: 'shopping-bag',
+    },
+    {
+        name: 'COD payment',
+        description: 'Thanh Toán Khi Nhận Hàng',
+        icon: 'credit-card',
+    },
+    {
+        name: 'VIP customers',
+        description: 'Ưu Đãi Hấp Dẫn Cho Khách Vip',
+        icon: 'gem',
+    },
+    {
+        name: 'Warranty support',
+        description: 'Tiết Kiệm Được Nhiều Tiền Hơn',
+        icon: 'hand-holding-usd',
+    },
+];
+
+export const category_product = [
+    {
+        image: 'https://salt.tikicdn.com/cache/w100/ts/upload/6d/56/64/3c4a8a3a7475311d8c6892d9ede8ead7.png.webp',
+        title: 'Dành cho bạn',
+    },
+    {
+        image: 'https://salt.tikicdn.com/cache/w100/ts/personalish/65/e4/81/fd8923d1ebbc4cd8d5e0070b8e94575d.jpg.webp',
+        title: 'Sam Sung Thời Thượng',
+    },
+    {
+        image: 'https://download.logo.wine/logo/Xiaomi_Mi_5c/Xiaomi_Mi_5c-Logo.wine.png',
+        title: 'Xiaomi Giá Rẻ',
+    },
+    {
+        image: 'https://lh3.googleusercontent.com/proxy/tDin0sZKUGJN1siwhkCkuW2RlHmDyujUwgUYDYe1Wd3JNHWQD-Vmw3iK9q__CCRY0v4cnpalw58z5vTQfhkSGIIYtq0pyyEQNDXtj0AQp9fDvCEbv07o',
+        title: 'Đập Hộp Hawei',
+    },
+    {
+        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/OPPO_LOGO_2019.svg/2560px-OPPO_LOGO_2019.svg.png',
+        title: 'Siêu phẩm Oppo',
+    },
+    {
+        image: 'https://logosvector.net/wp-content/uploads/2013/03/lg-vector-logo.png',
+        title: 'LG Hỗ Trợ',
+    },
+    {
+        image: 'https://banner2.cleanpng.com/20180412/vge/kisspng-nokia-lumia-900-logo-nokia-ozo-smartphone-lenovo-logo-5acf6b2f90f9f6.1100214415235428315938.jpg',
+        title: 'Nokia Cực Bền',
+    },
+    {
+        image: 'https://1000logos.net/wp-content/uploads/2016/10/Apple_logo_grey.png',
+        title: 'Cực Vip Apple',
+    },
+];

@@ -6,11 +6,15 @@ import 'slick-carousel/slick/slick-theme.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'antd/dist/antd.css';
+import { Provider } from 'react-redux';
+import store, { persistor } from './Store';
 
 ReactDOM.render(
-    <React.StrictMode>
-        <App />
-    </React.StrictMode>,
+    <Provider store={store}>
+        <React.StrictMode>
+            <App />
+        </React.StrictMode>
+    </Provider>,
     document.getElementById('root'),
 );
 
