@@ -1,10 +1,10 @@
 import React from 'react'
-import WatchSuggest1 from '../img/WatchSuggest1.png'
-import WatchSuggest2 from '../img/WatchSuggest2.jpg'
-import WatchSuggest3 from '../img/WatchSuggest3.jpg'
-import WatchSuggest4 from '../img/WatchSuggest4.png'
-import WatchSuggest5 from '../img/WatchSuggest5.jpg'
-import WatchSuggest6 from '../img/WatchSuggest6.jpg'
+import WatchSuggest1 from '../../Assets/Images/Product_img/WatchSuggest1.png'
+import WatchSuggest2 from '../../Assets/Images/Product_img/WatchSuggest2.jpg'
+import WatchSuggest3 from '../../Assets/Images/Product_img/WatchSuggest3.jpg'
+import WatchSuggest4 from '../../Assets/Images/Product_img/WatchSuggest4.png'
+import WatchSuggest5 from '../../Assets/Images/Product_img/WatchSuggest5.jpg'
+import WatchSuggest6 from '../../Assets/Images/Product_img/WatchSuggest6.jpg'
 function ProductDiscover() {
     return (
         <div className="ProductDiscover">

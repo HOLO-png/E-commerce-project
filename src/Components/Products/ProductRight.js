@@ -1,14 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import tikiCard from '../img/tikiCard.png'
-import freeship from '../img/freeship.png'
-import Watch1 from '../img/Watch1.jpg'
-import Watch2 from '../img/Watch2.jpg'
-import BaoTinWatch from '../img/BaoTinWatch.jpg'
-import official from '../img/official.png'
-import compensation from '../img/compensation.svg'
-import refund from '../img/refund.svg'
-import guarantee from '../img/guarantee.svg'
+import tikiCard from '../../Assets/Images/Product_img/tikiCard.png'
+import freeship from '../../Assets/Images/Product_img/freeship.png'
+import Watch1 from '../../Assets/Images/Product_img/Watch1.jpg'
+import Watch2 from '../../Assets/Images/Product_img/Watch2.jpg'
+import BaoTinWatch from '../../Assets/Images/Product_img/BaoTinWatch.jpg'
+import official from '../../Assets/Images/Product_img/official.png'
+import compensation from '../../Assets/Images/Product_img/compensation.svg'
+import refund from '../../Assets/Images/Product_img/refund.svg'
+import guarantee from '../../Assets/Images/Product_img/guarantee.svg'
 
 function ProductRight(props) {
     return (

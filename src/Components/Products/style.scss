@@ -607,7 +607,7 @@
     will-change: transform;
     &:hover {
         transform: translateY(-1px);
-        box-shadow: rgb(0 0 0 / 10%) 0px 0px 20px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
     }
     &-image {
         &-img {

@@ -1,10 +1,10 @@
 import React from 'react'
-import SmartWatchSame2 from '../img/SmartWatchSame2.png'
-import SmartWatchSame3 from '../img/SmartWatchSame3.jpg'
-import SmartWatchSame4 from '../img/SmartWatchSame4.jpg'
-import SmartWatchSame5 from '../img/SmartWatchSame5.jpg'
-import SmartWatchSame6 from '../img/SmartWatchSame6.jpg'
-import WatchSameFreeShip from '../img/WatchSameFreeShip.png'
+import SmartWatchSame2 from '../../Assets/Images/Product_img/SmartWatchSame2.png'
+import SmartWatchSame3 from '../../Assets/Images/Product_img/SmartWatchSame3.jpg'
+import SmartWatchSame4 from '../../Assets/Images/Product_img/SmartWatchSame4.jpg'
+import SmartWatchSame5 from '../../Assets/Images/Product_img/SmartWatchSame5.jpg'
+import SmartWatchSame6 from '../../Assets/Images/Product_img/SmartWatchSame6.jpg'
+import WatchSameFreeShip from '../../Assets/Images/Product_img/WatchSameFreeShip.png'
 function ProductByMore(props) {
     return (
         <div className="ProductByMore">

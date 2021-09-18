@@ -1,16 +1,16 @@
 import React from 'react';
-import './assets/css/app.css'
-import NavBar from './assets/Components/NavBar'
-import ProductLeft from './assets/Components/ProductLeft'
-import ProductRight from './assets/Components/ProductRight'
-import ProductByMore from './assets/Components/ProductByMore'
-import ProductDesc from './assets/Components/ProductDesc'
-import ProductInfo from './assets/Components/ProductInfo'
-import ProductComment from './assets/Components/ProductComment'
-import ProductReview from './assets/Components/ProductReview'
-import ProductDiscover from './assets/Components/ProductDiscover'
-import ProductOther from './assets/Components/ProductOther'
-import ProductSaw from './assets/Components/ProductSaw'
+import './style.scss';
+import NavBar from './NavBar'
+import ProductLeft from './ProductLeft'
+import ProductRight from './ProductRight'
+import ProductByMore from './ProductByMore'
+import ProductDesc from './ProductDesc'
+import ProductInfo from './ProductInfo'
+import ProductComment from './ProductComment'
+import ProductReview from './ProductReview'
+import ProductDiscover from './ProductDiscover'
+import ProductOther from './ProductOther'
+import ProductSaw from './ProductSaw'
 function Products(props) {
     return <div>
         <div className="grida">

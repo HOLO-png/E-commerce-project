@@ -1,8 +1,8 @@
 import React from 'react'
-import WatchSameFreeShip from '../img/WatchSameFreeShip.png'
-import OtherWatch15 from '../img/OtherWatch15.jpg'
-import OtherWatch5 from '../img/OtherWatch5.jpg'
-import OtherWatch6 from '../img/OtherWatch6.jpg'
+import WatchSameFreeShip from '../../Assets/Images/Product_img/WatchSameFreeShip.png'
+import OtherWatch15 from '../../Assets/Images/Product_img/OtherWatch15.jpg'
+import OtherWatch5 from '../../Assets/Images/Product_img/OtherWatch5.jpg'
+import OtherWatch6 from '../../Assets/Images/Product_img/OtherWatch6.jpg'
 function ProductSaw() {
     return (
         <div className="ProductSaw">

@@ -1,10 +1,10 @@
 import React from 'react'
-import SmartWatch from '../img/SmartWatch.jpg'
-import Watch1 from '../img/Watch1.jpg'
-import Watch2 from '../img/Watch2.jpg'
-import Watch3 from '../img/Watch3.jpg'
-import Watch4 from '../img/Watch4.jpg'
-import Watch5 from '../img/Watch5.jpg'
+import SmartWatch from '../../Assets/Images/Product_img/SmartWatch.jpg'
+import Watch1 from '../../Assets/Images/Product_img/Watch1.jpg'
+import Watch2 from '../../Assets/Images/Product_img/Watch2.jpg'
+import Watch3 from '../../Assets/Images/Product_img/Watch3.jpg'
+import Watch4 from '../../Assets/Images/Product_img/Watch4.jpg'
+import Watch5 from '../../Assets/Images/Product_img/Watch5.jpg'
 function ProductLeft(props) {
     return (
             <div className="product-left">

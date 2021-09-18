@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import ProductDetail from '../img/ProductDetail.jpg'
+import ProductDetail from '../../Assets/Images/Product_img/ProductDetail.jpg'
 function ProductDesc(props) {
     return (
         <div className="ProductDesc">

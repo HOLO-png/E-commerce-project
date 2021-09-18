@@ -1,9 +1,9 @@
 import React from 'react'
-import WatchComment1 from '../img/WatchComment1.jpg'
-import WatchComment4 from '../img/WatchComment4.jpg'
-import WatchComment5 from '../img/WatchComment5.jpg'
-import WatchComment6 from '../img/WatchComment6.jpg'
-import WatchComment8 from '../img/WatchComment8.jpg'
+import WatchComment1 from '../../Assets/Images/Product_img/WatchComment1.jpg'
+import WatchComment4 from '../../Assets/Images/Product_img/WatchComment4.jpg'
+import WatchComment5 from '../../Assets/Images/Product_img/WatchComment5.jpg'
+import WatchComment6 from '../../Assets/Images/Product_img/WatchComment6.jpg'
+import WatchComment8 from '../../Assets/Images/Product_img/WatchComment8.jpg'
 function ProductComment() {
     return (
         <div className="ProductComment">
